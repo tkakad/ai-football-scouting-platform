@@ -1,0 +1,24 @@
+[alembic_version]
+    *version_num {label:"VARCHAR(32)"}
+[players]
+    *id {label:"INTEGER"}
+    aerials_won {label:"DOUBLE PRECISION"}
+    age {label:"INTEGER"}
+    appearances {label:"INTEGER"}
+    assists {label:"INTEGER"}
+    goals {label:"INTEGER"}
+    minutes {label:"INTEGER"}
+    motm {label:"INTEGER"}
+    name {label:"VARCHAR"}
+    nationality {label:"VARCHAR"}
+    pass_success {label:"DOUBLE PRECISION"}
+    position {label:"VARCHAR"}
+    rating {label:"DOUBLE PRECISION"}
+    red_cards {label:"INTEGER"}
+    shots_per_game {label:"DOUBLE PRECISION"}
+    team_id {label:"INTEGER"}
+    yellow_cards {label:"INTEGER"}
+[teams]
+    *id {label:"INTEGER"}
+    name {label:"VARCHAR"}
+teams ?--* players

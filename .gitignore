@@ -1,0 +1,29 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+
+# Mac system files
+.DS_Store
+
+# SQLite or local DBs (if added later)
+*.sqlite3
+
+# Great Expectations output
+gx/uncommitted/data_docs/
+gx/uncommitted/validations/
+gx/uncommitted/config_variables.yml
+
+# Logs
+*.log
+
+# Alembic generated cache
+alembic/versions/__pycache__/
+alembic/__pycache__/
